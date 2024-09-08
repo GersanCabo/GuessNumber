@@ -9,13 +9,22 @@
 </head>
 <body>
     <div id="initial-menu">
-        <input type="number" id="number-size" value="4" min="1">
-        <button id="button-number-size">Start</button>
+        <p>Choose the number size: </p>
+        <p>
+            <input type="number" id="number-size" value="4" min="1">
+            <button id="button-number-size">Start</button>
+        </p>
     </div>
     <div id="game-ui" style="display: none;">
-        <input type="number" id="number-attempt">
-        <button id="button-check-number">Try</button>
+        <p>
+            Try a number (<span id="num-of-digits"></span> digits): 
+        </p>
+        <p>
+            <input type="number" id="number-attempt">
+            <button id="button-check-number">Try</button>
+        </p>
         <div id="history-attempts"></div>
+        <button id="button-restart-game">Restart</button>
     </div>
 </body>
 </html>
