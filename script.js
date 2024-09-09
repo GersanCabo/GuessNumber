@@ -81,7 +81,7 @@ function StartGame() {
         SaveCookie("attempts_history","")
         //Save cookies end
         document.getElementById("initial-menu").style.display = "none";
-        document.getElementById("game-ui").style.display = "block";
+        document.getElementById("game-ui").style.display = "flex";
         document.getElementById("num-of-digits").innerHTML = number_size;
     } else {
         alert("Invalid number!!");
@@ -165,7 +165,7 @@ function FinishGame() {
     RemoveCookie("correct_number");
     RemoveCookie("attempts");
     RemoveCookie("attempts_history")
-    document.getElementById("initial-menu").style.display = "block";
+    document.getElementById("initial-menu").style.display = "flex";
     document.getElementById("game-ui").style.display = "none";
     document.getElementById("history-attempts").innerHTML = "";
 }

@@ -8,28 +8,26 @@
     <title>GuessNumber</title>
 </head>
 <body>
-    <div id="initial-menu">
+    <div id="initial-menu" class="menu">
         <p>
-            <b>Mira, tú eliges los dígitos que quieras que tenga el número, ¿sabe? 
+            Mira, tú eliges los dígitos que quieras que tenga el número, ¿sabe? 
             Luego ya te pones a intentar adivinar cuál es el número, tampoco es 
-            tan difícil de entender maquina (mensaje provisional)</b>
+            tan difícil de entender maquina (mensaje provisional)
         </p>
-        <p>Choose the number size: </p>
-        <p>
+        <div class="input-number">
+            <p>Choose the number size: </p>
             <input type="number" id="number-size" value="4" min="1">
-            <button id="button-number-size">Start</button>
-        </p>
+            <button id="button-number-size" class="btn-prs">Start</button>
+        </div>
     </div>
-    <div id="game-ui" style="display: none;">
+    <div id="game-ui" class="menu" style="display: none;">
         <p>
             Try a number (<span id="num-of-digits"></span> digits): 
         </p>
-        <p>
-            <input type="number" id="number-attempt">
-            <button id="button-check-number">Try</button>
-        </p>
+        <input type="number" id="number-attempt">
+        <button id="button-check-number" class="btn-prs">Try</button>
         <div id="history-attempts"></div>
-        <button id="button-restart-game">Restart</button>
+        <button id="button-restart-game" class="btn-prs restart">Restart</button>
     </div>
 </body>
 </html>
